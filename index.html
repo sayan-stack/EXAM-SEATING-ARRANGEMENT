@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seating Arrangement</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+    <div class="container">
+        <!-- Header Text -->
+    <div>
+        <h2 style="font-size: 32px;">
+            Seating Arrangement
+        </h2>
+    <!--  -->
+        <!-- Sub header text -->
+        <h4 style="font-size: 21px;">
+            Set up the seating for your exam
+        </h4>
+    </div>
+    </div>
+    <div class="form">
+         <form>
+            <div class="alpa">
+            <label for="rn">Room Name:</label><br>
+            <input type="text" id="room-name" placeholder="eg-B3 1.5" style="padding-right: 237px; background-color: rgb(246, 246, 246);"><br>
+            </div>
+
+            <div class="alpa">
+            <label for="nr" style="padding-right: 120px;">Number of rows:</label>
+            <label for="nc">No of columns:</label><br>
+            <input type="text" id="rows" placeholder="eg-10" style="margin-right: 60px;background-color: rgb(246, 246, 246);">
+            <input type="text" id="cols" placeholder="eg-10" style="background-color: rgb(246, 246, 246);"><br>
+            </div>
+            
+            <div class="alpa">
+            <label for="nc">No of students:</label><br>
+            <input type="text" id="students" placeholder="eg-100 " style="padding-right: 237px; background-color: rgb(246, 246, 246);"><br>
+            </div>
+          </form>
+    </div>
+    
+    <div class="btn">
+    <button onclick="generateSeatingPage()">Generate Seating</button>
+    </div>
+    
+    <div id="seating-section">
+        <div id="section-title"></div>
+        <div id="seating-layout" class="seating-layout"></div>
+    </div>
+</body>
+<script src="index1.js"></script>
+</html>

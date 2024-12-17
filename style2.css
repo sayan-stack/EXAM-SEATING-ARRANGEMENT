@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.seating-layout {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+gap: 20px;
+margin-bottom: 30px;
+}
+
+.seat {
+background-color: white;
+padding: 20px;
+border: 1px solid #ddd;
+border-radius: 8px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 0.9em;
+color: #333;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+transition: box-shadow 0.2s;
+}
+
+.seat:hover {
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.seat img {
+margin-right: 10px;
+}
+
+.students-list {
+list-style: none;
+padding: 0;
+}
+
+.student-item {
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.student-item img {
+width: 50px;
+height: 50px;
+border-radius: 50%;
+margin-right: 15px;
+}
+
+.student-item div {
+font-size: 1.1em;
+}
+
+.student-item span {
+display: block;
+color: #555;
+font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .seating-layout {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    }
+}

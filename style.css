@@ -1,0 +1,145 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+.main
+{
+    height: 100%;
+    background:url("https://www.teachermagazine.com/assets/images/teacher/_800x418_crop_center-center_82_none/classroom_layout-what_does_the_research_say.jpg?mtime=1594268360")no-repeat center/cover fixed;
+}
+.container
+{
+    height:auto;
+    width:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+} 
+.container h2{
+    display: inline-flex;
+    
+}
+.container h4{
+    padding-bottom: 36px;
+    margin-bottom: 49px;
+}
+.form
+{
+    height: 258px;
+    width:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+ul{
+    text-decoration: none;
+}
+
+form input
+{
+    padding-bottom: 12px;
+    border-radius: 11px;
+} 
+
+.btn
+{
+   display: flex;
+   justify-content: center;
+   padding-bottom: 132px;
+     
+ }
+ button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    margin: 230px;
+    border-radius: 11px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+button:hover
+{
+    background-color: green;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.alpa
+{
+    margin-bottom:33px ;
+    
+}
+input
+{
+   cursor: pointer;
+}
+
+input, button {
+    margin: 2px 4px;
+    padding: 10px 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.seating-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.seat {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em;
+    color: #333;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s;
+}
+
+.seat:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.seat img {
+    margin-right: 10px;
+}
+
+.students-list {
+    list-style: none;
+    padding: 0;
+}
+
+.student-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.student-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.student-item div {
+    font-size: 1.1em;
+}
+
+.student-item span {
+    display: block;
+    color: #555;
+    font-size: 0.9em;
+}
